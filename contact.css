@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@100;200&family=Titillium+Web:wght@300&display=swap');
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family:'Poppins', sans-serif,'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    cursor: pointer;
+}
+
+html{
+
+    scroll-behavior: smooth;
+}
+
+body{
+
+    display:flex;
+    flex-direction: column;
+    justify-content:space-around;
+    background:#0d1117 url("./resources/pexels-donald-tong-23475.jpg") ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width:100%;
+}
+nav{
+    position:fixed;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    top:-3vh;
+    right:1vh;
+    height:20vh;
+    margin:7vh 1vh 2vh auto;
+}
+nav a 
+{
+    display: flex;
+    justify-content: center;
+    font-family:'Titillium Web','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    background:#0d101f ;
+    color:#ffffff;
+    font-size: 2vh;
+    font-weight:600;
+    height:4vh;
+    width: 12vh;
+    margin:2vh;
+    padding-left:3vh;
+    padding-right:3vh;
+    padding-top:.5vh;
+    padding-bottom: 1vh;
+    border-radius:1vh;
+    transition: 1s smooth;
+}
+nav a:hover{
+    filter: opacity(.75);
+}
+nav a:active {
+
+    background: #0f0e0ee7;
+
+}
+.main-frame
+{
+    display: flex;
+    flex-direction: row;
+}
+#contact-us
+{
+    margin:auto;
+    font-size:10vh;
+    font-weight:900;
+    margin-left: 13vh;
+    margin-top:30vh;
+    color:#ffffff;
+    
+}
+
+
+
+.contact
+{
+    display:flex;
+    flex-direction: column;
+    margin:auto;
+    width:45%;
+    height:50%;
+    padding-top:5vh;
+    transition: opacity 10s;
+    margin-top: 15vh;
+    margin-bottom: 10vh;
+    border-radius: 5vh;
+}
+.contact form
+{
+    display: flex;
+    flex-direction: column;
+    width:50%;
+    margin:auto;
+}
+
+.contact form label{
+
+    font-size: 2vh;
+    color: #545454;
+    font-weight: 700;
+    margin:1vh
+}
+.contact form input{
+
+    font-size: 2vh;
+    color: #491111;
+    font-weight: 700;
+    margin:1vh;
+    padding: 1vh 7vh;
+    outline:none;
+    border:1px solid #292727;
+}
+
+.contact form input::placeholder
+{
+    font-size: 2vh;
+    color: #b3b1b1;
+    font-weight: 700;
+ 
+}
+.contact form textarea{
+    font-size: 2vh;
+    color: #491111;
+    font-weight: 700;
+    margin:1vh;
+    padding: 1vh 7vh;
+    outline: none;
+    border: none;
+
+}
+.submit{
+
+    background: #058e6e;
+    font-size: 2.5vh;
+    font-weight: 800;
+    color: #ffffff;
+    width:45vh;
+    height: 5vh;
+    margin: 1vh auto ;
+    margin-bottom: 5vh;
+    border: 2px solid rgb(192, 191, 191);
+    border-radius: 1vh;
+    outline: none;
+    padding: 1vh 1v;
+
+}
+.contact form input[type = "submit"]:active{
+    background: #4c4d4c;
+    filter:opacity(.73);
+
+}
+
+#social
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height:40vh;
+    margin-bottom: 0;
+    padding: 21vh 17vh;    
+    padding-top:5vh;
+
+}
+.icon
+{
+    position: relative;
+    margin:auto;
+    margin-right: 3vh;
+    width:6vh;
+    height:6vh;
+    border-radius: 50%;
+    background: #262728;
+    border: 2px solid #7e7b7b;
+    overflow: hidden;
+}
+.icon::after
+{
+    content: "";
+    position: absolute;
+    background: #616161;
+    width: 6vh;
+    height:6vh;
+    top:-7vh;
+    transition: transform 1s;
+}
+.icon:nth-child(1)::after
+{
+
+    background: #f41c8f;  
+}
+.icon:nth-child(2)::after
+{
+
+    background: #151515;  
+}
+.icon:nth-child(3)::after
+{
+
+    background: #09094a;  
+}
+.icon:nth-child(4)::after
+{
+
+    background: #1c96f4;  
+}
+.icon:nth-child(5)::after
+{
+
+    background: #3044a8;  
+}
+.icon i{
+    position: absolute;
+    font-size:4vh;
+    margin:auto;
+    top:.9vh;
+    left:.9vh;
+    color:#f0f0f0;
+    z-index: 2;
+
+}
+.icon:hover  i:hover
+{
+    color:#ffffff;
+    transform: rotateZ(360deg);
+    transition: 2s;
+}
+ .icon:hover::after 
+{
+
+   transform: translateY(7vh);
+}

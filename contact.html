@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Sreenath | Contact </title>
+</head>
+<body>
+    
+  <nav>
+    <a href="./index.html" class="pages" target = "_blank">Home</a>
+    <a href="./skills.html" class="pages" target = "_blank">Skills</a>
+    <a href="#projhead" class="pages" target = "_blank">Projects</a>
+    <a href="./contact.html" class="pages">Contact</a>
+    <a href="#social" class="pages" target = "_blank">Social</a>
+</nav>
+
+   <section class = "main-frame">
+
+    <div class="details">
+        <h1 id="contact-us">Contact Us</h1>
+        <footer id = "social">
+            <a href="https://instagram.com/_im.sreenath_/" target = "_blank" class="icon">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://github.com/sreenathsnv/" target = "_blank" class="icon">
+                <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://in.linkedin.com/in/sreenath-v-097050217" class="icon" target = "_blank">
+                <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="https://twitter.com/Sreenath_snv" target = "_blank" class="icon">
+                <i class="fa-brands fa-twitter"></i>
+            </a>
+            <a href="https://t.me/snv_py" class="icon" target = "_blank">
+                <i class="fa-brands fa-telegram"></i>
+            </a>
+    
+        </footer>
+
+    </div>
+
+    <section class="contact" id = "contact">
+        <form method="post" name = "contact">
+            <label for = "name" class = "label" id = "name">Name</label>
+            <input type="text" required name  = "name" placeholder="Your name">
+            <label for = "email" class = "label" >Email ID</label>
+            <input type="email" required name  = "email" placeholder="Email ID">
+            <label for = "Phone" class = "label">Phone Number</label>
+            <input type="number"  name  = "Phone" placeholder="Phone Number">
+            <label for = "comment" class = "label" >Comment</label>
+            <textarea name="comment" id="comment" cols="30" rows="7" placeholder="Comment"></textarea>
+        </form>
+      <!-- Button trigger modal -->
+<button type="button" class="submit" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Send
+  </button>
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">THANK YOU</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Your message has been sent
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> 
+</body>
