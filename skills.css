@@ -99,6 +99,17 @@ h1
     filter: drop-shadow(1vh 1vh 1em #050505);
     margin: 4vh;
 }
+ .skills:hover .cards:not(:hover)
+{
+    filter:brightness(.5);
+    transition: 2s;
+}
+.skills:hover .cards:hover
+{
+    filter:brightness(1);
+    transform: scale(110%);
+    transition: 1s;
+}
 .quote
 {
     font-size: 4vh;
