@@ -18,9 +18,9 @@ body{
     display:flex;
     flex-direction: column;
     justify-content:space-around;
-    background:#0d1117 url("./resources/pexels-pixabay-257699.jpg") ;
+    background:#0d1117 url("./resources/pexels-francesco-ungaro-396547.jpg") ;
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat:repeat;
     width:100%;
 }
 nav{
@@ -32,6 +32,7 @@ nav{
     right:1vh;
     height:20vh;
     margin:7vh 1vh 2vh auto;
+    z-index: 5;
 }
 nav a 
 {
@@ -66,8 +67,75 @@ h1
     margin:auto;
     font-size:15vh;
     font-weight:900;
-    margin-left: 17vh;
-    margin-top:30vh;
+    margin-left: 9vh;
+    margin-top:5vh;
     color:#ffffff;
+}
+
+.carousel-container
+{
+    margin:auto;
+    width:150vh;
+    height:75vh;
+    overflow: hidden;
+}
+.carousel-img
+{   
+    width:150vh;
+    height:75vh;
+
+}
+.carousel-it
+{
+    border-radius: 5vh;
+}
+.photos
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin:auto;
+    margin-top:20vh;
+    margin-bottom: 10vh;
+    height:50vh;
+    width:90%;
     
+}
+.img-items
+{
+    display: flex;
+    justify-content: center;
+    width:40vh;
+    height:40vh;
+    border-radius: 3vh;
+    overflow: hidden;
+}
+.img-items img{
+
+    width:100%;
+    height:100%;
+    margin:5vh;
+    border-radius: 2vh;
+    background-size: contain;
+    object-fit: cover;
+    aspect-ratio: 1/1;
+}
+.photos:hover .img-items:not(:hover)
+{
+    transform: scale(90%);
+    filter:brightness(.3);
+    transition: 1.5s;
+}
+.photos:hover .img-items:nth-child(odd) :hover
+{
+    transform: scale(110%);
+    transition: 1.5s;
+    transform: rotateZ(4deg);
+}
+.photos:hover .img-items:nth-child(even) :hover
+{
+    transform: scale(110%);
+    transition: 1.5s;
+    transform: rotateZ(-4deg);
 }
