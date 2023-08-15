@@ -67,10 +67,10 @@ h1
 {
     display: flex;
     justify-content: center;
-    width:40vh;
+    /* width:40vh; */
     height:40vh;
-    border-radius: 3vh;
-    overflow: hidden;
+    border-radius: 3vh 3vh;
+    margin:2vh;
 }
 .img-items img{
 
@@ -84,19 +84,19 @@ h1
 }
 .photos:hover .img-items:not(:hover)
 {
-    transform: scale(90%);
+    transform: scale(70%);
     filter:brightness(.3);
     transition: 1.5s;
 }
 .photos:hover .img-items:nth-child(odd) :hover
 {
-    transform: scale(110%);
+    transform: scale(100%);
     transition: 1.5s;
     transform: rotateZ(4deg);
 }
 .photos:hover .img-items:nth-child(even) :hover
 {
-    transform: scale(110%);
+    transform: scale(200%);
     transition: 1.5s;
     transform: rotateZ(-4deg);
 }
