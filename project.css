@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@100;200&family=Titillium+Web:wght@300&display=swap');
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family:'Poppins', sans-serif,'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    cursor: pointer;
+}
+
+html{
+
+    scroll-behavior:smooth;
+}
+
+body{
+
+    display:flex;
+    flex-direction: column;
+    justify-content:space-around;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width:100%;
+    background:#0d1117 url("./resources/pexels-francesco-ungaro-396547.jpg") ;
+}
+h1
+{
+    position:fixed;
+    margin:auto;
+    font-size:15vh;
+    font-weight:900;
+    padding:2vh 1vh 11vh 17vh;
+    margin-top:12vh;
+    width:100%;
+    background: #89898980;
+    color:#ffffff;
+    top:0vh;
+    z-index: 0;
+
+    
+    
+}
+.projects
+{
+    display:flex;
+    flex-direction: column;
+    /* background: #171717f6 url("./resources/pexels-vojta-kovařík-3243090.jpg"); */
+    background-size: cover;
+    background-repeat: repeat;
+    object-fit: cover;
+    width:100%; 
+    min-height: 100vh;  
+    margin-top:80vh;    
+    z-index:3;                                                                                                             
+}
+.proj-cards
+{
+   
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    width:100%;
+    background:url("./resources/pexels-vojta-kovařík-3243090.jpg");
+    filter: brightness(.8);
+    margin:auto;
+    margin-top:12vh;
+    margin-bottom: 10vh;
+    z-index:4;  
+
+}
+.proj-cards a{
+
+    text-decoration: none;
+    font-size: 7vh;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #ffffff;
+    margin-left:40%;
+    margin-bottom: 2vh;
+    margin-top: 2vh;
+}
+.proj-cards a:hover
+{
+    color:#585858;
+    font-size: 7vh;
+    transition: 1s;
+}
+.proj-cards .project-demp
+{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding:2vh 10vh;
+}
+
+.project-demp img{
+
+    width:40vh;
+    height:50vh;
+    margin:-5vh 5vh 5vh 5vh;
+    border:2px solid #0f4b67;
+    border-radius: 2vh;
+}
+.project-demp img:hover{
+
+    transform:translateY(-1vh);
+    transition: 1s;
+}
+.project-demp .desc 
+{
+    width:60vh;
+    color:rgb(255, 255, 255);
+    
+}
+#social
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background: #181616da;
+    width:100%;
+    height:40vh;
+    margin:auto;
+    margin-top: 0vh;
+    margin-bottom: 0;
+    padding:10vh 70vh;
+    padding-top:10vh
+
+}
+.icon
+{
+    position: relative;
+    margin:auto;
+    margin-right: 3vh;
+    width:6vh;
+    height:6vh;
+    border-radius: 50%;
+    background: #f8f4f8;
+    border: 2px solid #7e7b7b;
+    overflow: hidden;
+}
+.icon::after
+{
+    content: "";
+    position: absolute;
+    background: #616161;
+    width: 6vh;
+    height:6vh;
+    top:-7vh;
+    transition: transform 1s;
+}
+.icon:nth-child(1)::after
+{
+
+    background: #f41c8f;  
+}
+.icon:nth-child(2)::after
+{
+
+    background: #151515;  
+}
+.icon:nth-child(3)::after
+{
+
+    background: #09094a;  
+}
+.icon:nth-child(4)::after
+{
+
+    background: #1c96f4;  
+}
+.icon:nth-child(5)::after
+{
+
+    background: #3044a8;  
+}
+.icon i{
+    position: absolute;
+    font-size:4vh;
+    margin:auto;
+    top:.9vh;
+    left:.9vh;
+    color:#585758;
+    z-index: 2;
+
+}
+.icon:hover  i:hover
+{
+    color:#ffffff;
+    transform: rotateZ(360deg);
+    transition: 2s;
+}
+ .icon:hover::after 
+{
+
+   transform: translateY(7vh);
+}

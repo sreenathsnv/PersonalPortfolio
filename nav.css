@@ -137,6 +137,7 @@ nav{
     right:1vh;
     height:20vh;
     margin:7vh 1vh 2vh auto;
+    z-index: 5;
 }
 nav a 
 {
