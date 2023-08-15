@@ -23,44 +23,7 @@ body{
     background-repeat: no-repeat;
     width:100%;
 }
-nav{
-    position:fixed;
-    display:flex;
-    flex-direction: row;
-    justify-content: space-around;
-    top:-3vh;
-    right:1vh;
-    height:20vh;
-    margin:7vh 1vh 2vh auto;
-}
-nav a 
-{
-    display: flex;
-    justify-content: center;
-    font-family:'Titillium Web','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-decoration: none;
-    background:#0d101f ;
-    color:#ffffff;
-    font-size: 2vh;
-    font-weight:600;
-    height:4vh;
-    width: 12vh;
-    margin:2vh;
-    padding-left:3vh;
-    padding-right:3vh;
-    padding-top:.5vh;
-    padding-bottom: 1vh;
-    border-radius:1vh;
-    transition: 1s smooth;
-}
-nav a:hover{
-    filter: opacity(.75);
-}
-nav a:active {
 
-    background: #0f0e0ee7;
-
-}
 .main-frame
 {
     display: flex;

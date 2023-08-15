@@ -128,161 +128,41 @@ html{
         transform: translateY(-100%);
         transition: all 0.3s 1s ease-out;
     }
-
-body{
-
+nav{
+    position:fixed;
     display:flex;
     flex-direction: row;
-    justify-content:space-around;
-    /* background:#F6F4EB url("./resources/pexels-ave-calvar-martinez-4419895.jpg"); */
-    background:#0d1117;
-    background-size: contain;
-    background-repeat: no-repeat;
-    width:100%;
-}
-
-.main{
-
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    background: #161a1f;
-    box-shadow: 1vh 2vh 3vh 1em #080b0e;
-    width:75%;
-    height:70vh;
-    margin:auto;
-    margin-top:20vh;
-    font-family:'Pacifico', cursive,'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    border-radius: 2vh;
-}
-#home
-{
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-}
-h1{
-    margin:auto;
-    font-size:12vh;
-    font-weight:700;
-    color:#69ffbc;
-    margin-left: 13vh;
-
-}
-h1:hover
-{
-    color:#a04ef7;
-    transition: 2s;
-
-}
-.comm
-{
-    font-size:5vh;
-    font-weight:500;
-    color:#c4c4c4;
-    margin:auto;
-    z-index:1;
-    margin-left: 24vh;
-
-}
-.img
-{
-
-    width: 40vh;
-    height: 40vh;
-    border: 5px solid #a3a2a3;
-    border-radius: 50%;
-    background-size: cover;
-    margin-left: -41vh;
-
-}
-.img:hover{
-    transform:rotateY(360deg);
-    border: 5px solid #db6fdb;
-    transition: transform 2s, border 1s;
-
-
-}
-#social
-{
-    position: fixed;
-    bottom:-8vh;
-    left: 35%;
-    display: flex;
-    flex-direction: row;
     justify-content: space-around;
-    height:40vh;
-    margin-bottom: 0;
-    padding: 21vh 17vh;    
-    padding-top:5vh;
-
+    top:-3vh;
+    right:1vh;
+    height:20vh;
+    margin:7vh 1vh 2vh auto;
 }
-.icon
+nav a 
 {
-    position: relative;
-    margin:auto;
-    margin-right: 3vh;
-    width:6vh;
-    height:6vh;
-    border-radius: 50%;
-    background: #262728;
-    border: 2px solid #7e7b7b;
-    overflow: hidden;
-}
-.icon::after
-{
-    content: "";
-    position: absolute;
-    background: #616161;
-    width: 6vh;
-    height:6vh;
-    top:-7vh;
-    transition: transform 1s;
-}
-.icon:nth-child(1)::after
-{
-
-    background: #f41c8f;  
-}
-.icon:nth-child(2)::after
-{
-
-    background: #151515;  
-}
-.icon:nth-child(3)::after
-{
-
-    background: #09094a;  
-}
-.icon:nth-child(4)::after
-{
-
-    background: #1c96f4;  
-}
-.icon:nth-child(5)::after
-{
-
-    background: #f31313;  
-}
-.icon i{
-    position: absolute;
-    font-size:4vh;
-    margin:auto;
-    top:.9vh;
-    left:.9vh;
-    color:#f0f0f0;
-    z-index: 2;
-
-}
-.icon:hover  i:hover
-{
+    display: flex;
+    justify-content: center;
+    font-family:'Titillium Web','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    background:#5a74f5 ;
     color:#ffffff;
-    transform: rotateZ(360deg);
-    transition: 2s;
+    font-size: 2vh;
+    font-weight:600;
+    height:4vh;
+    width: 12vh;
+    margin:2vh;
+    padding-left:3vh;
+    padding-right:3vh;
+    padding-top:.5vh;
+    padding-bottom: 1vh;
+    border-radius:1vh;
+    transition: 1s smooth;
 }
- .icon:hover::after 
-{
+nav a:hover{
+    filter: opacity(.75);
+}
+nav a:active {
 
-   transform: translateY(7vh);
+    background: #0f0e0ee7;
+
 }
