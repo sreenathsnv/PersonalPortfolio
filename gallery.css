@@ -100,3 +100,9 @@ h1
     transition: 1.5s;
     transform: rotateZ(-4deg);
 }
+
+footer{
+    font-size: 2vh;
+    margin:8vh;
+    color:#ffffff65;
+}
